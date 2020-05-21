@@ -7438,6 +7438,21 @@ button.bg-dark:focus {
     border-radius: 50% !important;
 }
 
+.rounded-circle-img {
+    width: 95%;
+    height: 95%;
+    position: absolute;
+    background-size: cover;
+    z-index: -1;
+}
+
+.rounded-circle-h2 {
+    text-align: center;
+    font-size: 24px;
+    color: rgba(255, 255, 255, 0.7);
+    padding-bottom: -20px;
+}
+
 .rounded-pill {
     border-radius: 50rem !important;
 }
@@ -12043,9 +12058,9 @@ h5,
 
 .progress-bar span {
     position: absolute;
-    top: -38px;
+    top: -28px;
     right: 0;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 400;
     color: #fff;
 }
@@ -13596,8 +13611,7 @@ textarea.form-control {
 /* ------------------------------------------------------------------ */
 
 .tool-circle .h5 {
-    padding-top: 10px;
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .tool-circle .bg {
@@ -13638,7 +13652,7 @@ textarea.form-control {
 .tool-circle .tool .tool-bar {
     width: 100%;
     height: 100%;
-    background: none;
+    background: rgba(0, 0, 0, 0.24);
     border-width: 6px;
     border-style: solid;
     position: absolute;
