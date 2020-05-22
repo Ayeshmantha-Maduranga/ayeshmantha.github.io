@@ -12067,7 +12067,7 @@ h5,
 
 .ftco-hireme {
     background: var(--mycolor);
-    z-index: -1;
+    z-index: 2;
 }
 
 .ftco-hireme h2 {
