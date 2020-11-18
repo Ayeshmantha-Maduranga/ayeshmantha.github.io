@@ -3,6 +3,7 @@
  * Copyright 2011-2019 The Bootstrap Authors
  * Copyright 2011-2019 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ 00a6fd
  */
 
 :root {
@@ -27,7 +28,7 @@
   --danger: #dc3545;
   --light: #f8f9fa;
   --dark: #343a40; */
-    --mycolor: #00a6fd;
+    --mycolor: #c29171;
     --bgcolor: #000000;
     --breakpoint-xs: 0;
     --breakpoint-sm: 576px;
