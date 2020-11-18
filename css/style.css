@@ -7368,7 +7368,7 @@ button.bg-dark:focus {
 }
 
 .border-primary {
-    border-color: #007bff !important;
+    border-color: var(--mycolor) !important;
 }
 
 .border-secondary {
