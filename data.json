@@ -1,0 +1,241 @@
+{
+    "menu": [
+        {
+            "name": "HOME",
+            "link": "/index.html"
+        },
+        {
+            "name": "HISTORY",
+            "subName": [
+                {
+                    "name": "EDUCATION & WORK",
+                    "link": "/history.html"
+                },
+                {
+                    "name": "AWARDS",
+                    "link": "/awards.html"
+                },
+                {
+                    "name": "ORGANIZING",
+                    "link": "/Organizing.html"
+                }
+            ]
+        },
+        {
+            "name": "PROJECTS",
+            "link": "/projects.html"
+        },
+        {
+            "name": "CONTACT",
+            "link": "/contact.html"
+        }
+    ],
+    "info_bar": {
+        "name": "Ayeshmantha Madurnga",
+        "load_name": "Ayeshmantha",
+        "deicript": "Innovater|Designer|Developer",
+        "infor_lamp_light": "If I accept a job, I will somehow complete it.",
+        "about_bar": [
+            [
+                "Residence",
+                "Colombo"
+            ],
+            [
+                "Home Twon",
+                "Negombo"
+            ],
+            [
+                "Age",
+                "25"
+            ]
+        ],
+        "skill1Name": "Languages",
+        "skill1List": [
+            [
+                "English",
+                "75"
+            ],
+            [
+                "Sinhala",
+                "100"
+            ],
+            [
+                "Tamil",
+                "15"
+            ]
+        ],
+        "skill2Name": "Coding",
+        "skill2List": [
+            [
+                "html",
+                "75"
+            ],
+            [
+                "CSS",
+                "100"
+            ],
+            [
+                "PIC",
+                "15"
+            ],
+            [
+                "CSS",
+                "100"
+            ],
+            [
+                "PIC",
+                "85"
+            ]
+        ],
+        "skill3Name": "Knowledge",
+        "skill3List": [
+            "Bootstrap, Materialize",
+            "Stylus, Sass, Less",
+            "Gulp, Webpack, Grunt",
+            "GIT knowledge"
+        ],
+        "CV_link": "https://drive.google.com/uc?id=13DTIorRzK8qP6BYA2X5UPGCMuOgZYf8G&export=download"
+    },
+    "footer": {
+        "copyright": "© 2022 All Rights Reserved.",
+        "mail": "madurnga.ayeshmantha@gmail.com"
+    },
+    "home": {
+        "title": "Discover My Tech</br> Space!",
+        "tag": "code",
+        "parmenat_txt": "I build",
+        "cang_txt": [
+            "tech Innovation",
+            "automation tools",
+            "robots"
+        ],
+        "counter": [
+            {
+                "text": "Years Experience",
+                "value": 10,
+                "mark": "+"
+            },
+            {
+                "text": "Completed Projects",
+                "value": 46,
+                "mark": ""
+            },
+            {
+                "text": "Happy Customers",
+                "value": 30,
+                "mark": "+"
+            },
+            {
+                "text": "Honors and Awards",
+                "value": 25,
+                "mark": ""
+            }
+        ],
+        "tile_name1": "My Services",
+        "tile_grid1": [
+            {
+                "title": "Web Development",
+                "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus esse commodi deserunt vitae, vero quasi! Veniam quaerat tenetur pariatur doloribus.",
+                "link_name": "ORDER NOW",
+                "link": "/index.html"
+            },
+            {
+                "title": "Web Development",
+                "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus esse commodi deserunt vitae, vero quasi! Veniam quaerat tenetur pariatur doloribus.",
+                "link_name": "ORDER NOW",
+                "link": "/index.html"
+            },
+            {
+                "title": "Web Development",
+                "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus esse commodi deserunt vitae, vero quasi! Veniam quaerat tenetur pariatur doloribus.",
+                "link_name": "ORDER NOW",
+                "link": "/index.html"
+            },
+            {
+                "title": "Web Development",
+                "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus esse commodi deserunt vitae, vero quasi! Veniam quaerat tenetur pariatur doloribus.",
+                "link_name": "ORDER NOW",
+                "link": "/index.html"
+            },
+            {
+                "title": "Web Development",
+                "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus esse commodi deserunt vitae, vero quasi! Veniam quaerat tenetur pariatur doloribus.",
+                "link_name": "ORDER NOW",
+                "link": "/index.html"
+            },
+            {
+                "title": "Web Development",
+                "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus esse commodi deserunt vitae, vero quasi! Veniam quaerat tenetur pariatur doloribus.",
+                "link_name": "ORDER NOW",
+                "link": "/index.html"
+            }
+        ],
+        "tile_name2": "Working models",
+        "tile_grid2": [
+            {
+                "title": "Starter Price",
+                "subtitle": "Starter Price",
+                "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus esse commodi deserunt vitae, vero quasi! Veniam quaerat tenetur pariatur doloribus.",
+                "link_name": "ORDER NOW",
+                "link": "/index.html"
+            },
+            {
+                "title": "Starter Price",
+                "subtitle": "Starter Price",
+                "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus esse commodi deserunt vitae, vero quasi! Veniam quaerat tenetur pariatur doloribus.",
+                "link_name": "ORDER NOW",
+                "link": "/index.html"
+            },
+            {
+                "title": "Starter Price",
+                "subtitle": "Starter Price",
+                "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus esse commodi deserunt vitae, vero quasi! Veniam quaerat tenetur pariatur doloribus.",
+                "link_name": "ORDER NOW",
+                "link": "/index.html"
+            }
+        ],
+        "tile_name3": "Recommendations",
+        "tile_grid3": [
+            {
+                "name": "Paul Trueman",
+                "post": "Template author",
+                "msg": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus esse commodi deserunt vitae, vero quasi! Veniam quaerat tenetur pariatur doloribus.",
+                "pic_url": "wp-content/uploads/img/testimonial-1-140x140.jpg",
+                "link": "/index.html",
+                "starts": 1
+            },
+            {
+                "name": "Paul Trueman",
+                "post": "Template author",
+                "msg": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus esse commodi deserunt vitae, vero quasi! Veniam quaerat tenetur pariatur doloribus.",
+                "pic_url": "wp-content/uploads/img/testimonial-1-140x140.jpg",
+                "link": "/index.html",
+                "starts": 3
+            },
+            {
+                "name": "Paul Trueman",
+                "post": "Template author",
+                "msg": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus esse commodi deserunt vitae, vero quasi! Veniam quaerat tenetur pariatur doloribus.",
+                "pic_url": "wp-content/uploads/img/testimonial-1-140x140.jpg",
+                "link": "/index.html",
+                "starts": 5
+            },
+            {
+                "name": "Paul Trueman",
+                "post": "Template author",
+                "msg": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus esse commodi deserunt vitae, vero quasi! Veniam quaerat tenetur pariatur doloribus.",
+                "pic_url": "wp-content/uploads/img/testimonial-1-140x140.jpg",
+                "link": "/index.html",
+                "starts": 3
+            },
+            {
+                "name": "Paul Trueman",
+                "post": "Template author",
+                "msg": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus esse commodi deserunt vitae, vero quasi! Veniam quaerat tenetur pariatur doloribus.",
+                "pic_url": "wp-content/uploads/img/testimonial-1-140x140.jpg",
+                "link": "/index.html",
+                "starts": 4
+            }
+        ]
+    }
+}
