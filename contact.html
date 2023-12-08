@@ -147,10 +147,9 @@
                                                                                 aria-atomic="true"></p>
                                                                             <ul></ul>
                                                                         </div>
-                                                                        <form onsubmit="sendEmail(); resset(); return false;" class="wpcf7-form init"
-                                                                            aria-label="Contact form"
-                                                                            novalidate="novalidate" data-status="init">
-                                                                            
+                                                                        <form id="sendMail" onsubmit="sendEmail(event)"
+                                                                            class="wpcf7-form init">
+
                                                                             <!-- contact form -->
                                                                             <div class="art-contact-form">
                                                                                 <!-- form field -->
@@ -165,9 +164,13 @@
                                                                                             placeholder="Name" value=""
                                                                                             type="text"
                                                                                             id="your-name"></span>
-                                                                                    <!-- label --> <label><i
-                                                                                            class="fas fa-user"></i></label>
-                                                                                </div> <!-- form field end -->
+                                                                                    <!-- label -->
+                                                                                    <label>
+                                                                                        <i class="fas fa-user"></i>
+                                                                                    </label>
+                                                                                </div>
+                                                                                <!-- form field end -->
+
                                                                                 <!-- form field -->
                                                                                 <div class="art-form-field">
                                                                                     <!-- email input --> <span
@@ -180,9 +183,13 @@
                                                                                             placeholder="Email" value=""
                                                                                             type="email"
                                                                                             id="your-email"></span>
-                                                                                    <!-- label --> <label><i
-                                                                                            class="fas fa-at"></i></label>
-                                                                                </div> <!-- form field end -->
+                                                                                    <!-- label -->
+                                                                                    <label>
+                                                                                        <i class="fas fa-at"></i>
+                                                                                    </label>
+                                                                                </div>
+                                                                                <!-- form field end -->
+
                                                                                 <!-- form field -->
                                                                                 <div class="art-form-field">
                                                                                     <!-- message textarea --> <span
@@ -194,16 +201,20 @@
                                                                                             aria-invalid="false"
                                                                                             placeholder="Message"
                                                                                             id="your-message"></textarea></span>
-                                                                                    <!-- label --> <label><i
-                                                                                            class="far fa-envelope"></i></label>
-                                                                                </div> <!-- form field end -->
+                                                                                    <!-- label -->
+                                                                                    <label>
+                                                                                        <i class="far fa-envelope"></i>
+                                                                                    </label>
+                                                                                </div>
+                                                                                <!-- form field end -->
+
                                                                                 <!-- button -->
                                                                                 <div class="art-submit-frame"> <button
                                                                                         class="art-btn art-btn-md art-submit"
                                                                                         type="submit"><span>Send
                                                                                             message</span></button>
                                                                                 </div>
-                                                                            </div> 
+                                                                            </div>
                                                                             <!-- contact form end -->
 
                                                                             <div class="wpcf7-response-output"
@@ -242,6 +253,29 @@
 
         </div>
         <!-- scroll frame end -->
+
+
+        <!-- ----------------------------- E-mail sending funtion ------------------------------------------->
+        <!-- <script src="wp-includes/js/smtp.js"></script>
+        <script>
+            function sendEmail() {
+                // <---- stop pgae loading
+                event.preventDefault();
+
+                console.log('mail sending!');
+                Email.send({
+                    Host: "smtp.elasticemail.com",
+                    Username: "maduranga.ayeshmantha@gmail.com",
+                    Password: "6BC926483EEF49A4DCF82C230531A39B437A",
+                    To: 'maduranga.ayeshmantha@gmail.com',
+                    From: getElementById('your-email').value,
+                    Subject: getElementById('your-name').value + ' @ayeshmantha.me',
+                    Body: getElementById('your-message').value
+                }).then(
+                    message => alert(message)
+                );
+            }
+        </script> -->
 
     </div>
     <!-- swup container end -->

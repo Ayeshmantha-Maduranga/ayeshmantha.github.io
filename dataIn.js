@@ -121,7 +121,7 @@ jQuery(document).ready(function ($) {
     var url = window.location.pathname;
     var filename = url.substring(url.lastIndexOf('/'));
     let menuItem = json["menu"];
-    console.log(filename);
+    // console.log(filename);
     for (let index = 0; index < menuItem.length; index++) {
         const element = menuItem[index];
         if (element["subName"] == null) {
@@ -184,7 +184,7 @@ jQuery(document).ready(function ($) {
 function init() {
     var url = window.location.pathname;
     var filename = url.substring(url.lastIndexOf('/'));
-    // alert(filename);
+    console.log(filename);
     //<---remove menu hilgh one
     let menuItem = json["menu"];
     var elemsArry = Array.from(document.querySelectorAll(".menu-item"));
@@ -358,7 +358,39 @@ function init() {
         document.getElementById("home_tilegrid3").addEventListener('touchend', function () { isOnDiv = false; });
         document.getElementById("home_tilegrid3").addEventListener('mouseup', function () { isOnDiv = false; });
     }
+
+
+    if (filename == '/contact.html') {
+        // let con_Email = getElementById('your-email').value
+        // getElementById('your-name').value
+        // getElementById('your-message').value
+    }
+
+
 }
+
+
+// <----------------------------- E-mail sending funtion ------------------------------------------->
+function sendEmail() {
+    // <---- stop pgae loading
+    event.preventDefault();
+
+    console.log('mail sending!');
+    Email.send({
+        Host: "smtp.elasticemail.com",
+        Username: "maduranga.ayeshmantha@gmail.com",
+        Password: "6BC926483EEF49A4DCF82C230531A39B437A",
+        To: 'maduranga.ayeshmantha@gmail.com',
+        From: "lakshanichathurangi100@gmail.com",
+        Subject: "test",
+        Body: "test body"
+    }).then(
+        message => alert(message)
+    );
+}
+
+
+
 
 // -------------- touch event ------------------
 // touch
@@ -475,18 +507,3 @@ function handleTouchMove(evt) {
     yDown = null;
 };
 
-
-// <----------------------------- E-mail sending funtion ------------------------------------------->
-function sendEmail() {
-    Email.send({
-        Host: "smtp.elasticemail.com",
-        Username: "maduranga.ayeshmantha@gmail.com",
-        Password: "6BC926483EEF49A4DCF82C230531A39B437A",
-        To: 'maduranga.ayeshmantha@gmail.com',
-        From: getElementById('your-email').value,
-        Subject: getElementById('your-name').value + ' @ayeshmantha.me',
-        Body: getElementById('your-message').value
-    }).then(
-        message => alert(message)
-    );
-}
