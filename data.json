@@ -33,7 +33,7 @@
     "info_bar": {
         "name": "Ayeshmantha Madurnga",
         "load_name": "Ayeshmantha",
-        "deicript": "Innovater|Designer|Developer",
+        "deicript": "Innovater | Designer | Developer",
         "infor_lamp_light": "If I accept a job, I will somehow complete it.",
         "about_bar": [
             [
@@ -46,7 +46,7 @@
             ],
             [
                 "Age",
-                "25"
+                "26"
             ]
         ],
         "skill1Name": "Languages",
@@ -64,40 +64,81 @@
                 "15"
             ]
         ],
-        "skill2Name": "Coding",
+        "skill2Name": "working Fields",
         "skill2List": [
             [
-                "html",
+                "Electronics",
+                "95"
+            ],
+            [
+                "Electrical 3-phase",
+                "70"
+            ],
+            [
+                "PLC",
                 "75"
             ],
             [
-                "CSS",
+                "DRAWING (ELECTRICAL, MECHANICAL)",
                 "100"
             ],
             [
-                "PIC",
-                "15"
+                "Automation System Design",
+                "80"
             ],
             [
-                "CSS",
-                "100"
-            ],
-            [
-                "PIC",
+                "Embedded System Design",
                 "85"
+            ],
+            [
+                "Robotics",
+                "80"
+            ],
+            [
+                "Computer Science",
+                "75"
+            ],
+            [
+                "Circuit Design",
+                "85"
+            ],
+            [
+                "Video animation",
+                "50"
+            ],
+            [
+                "Graphic design",
+                "75"
+            ],
+            [
+                "Audio Engineering",
+                "45"
+            ],
+            [
+                "Video mapping",
+                "65"
+            ],
+            [
+                "Interactive System Design",
+                "75"
             ]
         ],
-        "skill3Name": "Knowledge",
+        "skill3Name": "skills",
         "skill3List": [
-            "Bootstrap, Materialize",
-            "Stylus, Sass, Less",
-            "Gulp, Webpack, Grunt",
-            "GIT knowledge"
+            "Leadership",
+            "Time management",
+            "Problem solving ",
+            "Communication",
+            "Transferable",
+            "Critical Thinking",
+            "Organization",
+            "Teamwork"
+
         ],
         "CV_link": "https://drive.google.com/uc?id=13DTIorRzK8qP6BYA2X5UPGCMuOgZYf8G&export=download"
     },
     "footer": {
-        "copyright": "© 2022 All Rights Reserved.",
+        "copyright": "© 2023 All Rights Reserved.",
         "mail": "madurnga.ayeshmantha@gmail.com"
     },
     "home": {

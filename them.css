@@ -1,0 +1,233 @@
+.no-js img.lazyload {
+    display: none;
+}
+
+figure.wp-block-image img.lazyloading {
+    min-width: 150px;
+}
+
+.lazyload {
+    opacity: 0;
+}
+
+.lazyloading {
+    border: 0 !important;
+    opacity: 1;
+    background: rgba(255, 255, 255, 0) url('wp-content/plugins/wp-smushit/app/assets/images/smush-lazyloader-2.gif') no-repeat center !important;
+    background-size: 16px auto !important;
+    min-width: 16px;
+}
+.swiper-wrapper{
+    cursor: ew-resize;
+}
+
+img#wpstats {
+    display: none
+}
+
+/* Heading Color */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.art-banner .art-banner-overlay .art-banner-title h1,
+.content-sidebar .widget-title {
+    color: #FFFFFF;
+}
+
+@media (max-width: 1600px) {
+    .art-banner .art-banner-overlay .art-banner-title h1 {
+        color: #FFFFFF;
+    }
+}
+
+@media (max-width: 1400px) {
+    .art-banner .art-banner-overlay .art-banner-title h1 {
+        color: #FFFFFF;
+    }
+}
+
+@media (max-width: 920px) {
+    .art-banner .art-banner-overlay .art-banner-title h1 {
+        color: #FFFFFF;
+    }
+}
+
+
+
+/* Text Color */
+body,
+a,
+.art-table,
+.art-link,
+.art-preloader .art-preloader-content .art-preloader-load .progressbar-text,
+.art-info-bar .art-header .art-avatar .art-lamp-light .art-available-lamp:after,
+.art-info-bar .art-lang-skills .art-lang-skills-item .art-cirkle-progress .progressbar-text,
+.art-info-bar .art-hard-skills .art-hard-skills-item .art-line-progress .progressbar-text,
+.art-info-bar .art-knowledge-list li,
+.art-info-bar .art-ls-social a,
+.art-menu-bar nav .main-menu .menu-item a,
+.art-menu-bar nav .main-menu .menu-item.current-menu-item .sub-menu .menu-item a,
+.art-menu-bar nav .main-menu .menu-item.current-menu-parent .sub-menu .menu-item a,
+.art-contact-form label,
+.art-pagination span.dots,
+.footer,
+.art-filter a,
+.wp-block-categories-list li,
+.wp-block-archives-list li,
+.widget.widget_nav_menu ul li,
+.widget.widget_pages ul li,
+.widget_categories ul li,
+.comment-info,
+.art-blog-card .art-project-category {
+    color: #8c8c8e;
+}
+
+.art-menu-bar-btn span,
+.art-menu-bar-btn span:after,
+.art-menu-bar-btn span:before,
+.art-slider-navigation .swiper-pagination-bullet {
+    background: #8c8c8e;
+}
+
+
+
+/* Menu Color */
+.art-menu-bar nav .main-menu,
+.art-menu-bar nav .main-menu .menu-item a {
+    color: #8c8c8e;
+}
+
+
+
+/* Theme Color */
+.art-btn,
+.art-info-bar .art-header .art-avatar .art-lamp-light .art-available-lamp,
+.art-menu-bar .art-language-change li.art-active-lang,
+.art-price.art-popular-price:before,
+.art-slider-navigation .swiper-pagination-bullet.swiper-pagination-bullet-active,
+.art-contact-form .art-input.art-active+label,
+.art-contact-form .art-input:focus+label,
+.art-contact-form label.focused,
+.content-sidebar td#today,
+.single-post-text table td#today,
+.single-post-text ul>li:before,
+.comment-text ul>li:before,
+.comment-form .btn.fill,
+form.post-password-form input[type="submit"],
+.sticky:before,
+.wp-block-button a.wp-block-button__link,
+.wp-block-button.is-style-outline a.wp-block-button__link,
+.art-menu-bar .cart-btn .cart-icon .cart-count,
+.woocommerce #respond input#submit,
+.woocommerce a.button,
+.woocommerce button.button,
+.woocommerce input.button .woocommerce-mini-cart__buttons #respond input#submit,
+.woocommerce-mini-cart__buttons a.button,
+.woocommerce-mini-cart__buttons button.button,
+.woocommerce-mini-cart__buttons input.button,
+.woocommerce #respond input#submit:hover,
+.woocommerce a.button:hover,
+.woocommerce button.button:hover,
+.woocommerce input.button:hover .woocommerce-mini-cart__buttons #respond input#submit:hover,
+.woocommerce-mini-cart__buttons a.button:hover,
+.woocommerce-mini-cart__buttons button.button:hover,
+.woocommerce-mini-cart__buttons input.button:hover,
+.woocommerce span.onsale,
+.woocommerce #respond input#submit.alt,
+.woocommerce a.button.alt,
+.woocommerce button.button.alt,
+.woocommerce input.button.alt,
+.woocommerce div.product .woocommerce-tabs ul.tabs li.active a,
+.woocommerce-MyAccount-navigation li.woocommerce-MyAccount-navigation-link.is-active a {
+    background-color: #ffc107;
+}
+
+.art-link.art-color-link,
+.art-link.art-color-link:hover,
+.art-info-bar .art-name:hover a,
+.art-info-bar .art-knowledge-list li:before,
+.art-code i,
+.art-counter-frame .art-counter-box .art-counter,
+.art-counter-frame .art-counter-box .art-counter-plus,
+.art-price .art-price-body .art-price-cost .art-number,
+.art-price .art-price-body .art-price-list ul li:before,
+.art-price .art-price-body .art-price-list ul li.art-empty-item:before,
+.post-page-numbers.current,
+.art-pagination span,
+.art-pagination a.next,
+.art-pagination a.prev,
+.art-pagination a.next:hover,
+.art-pagination a.prev:hover,
+.single-post-text p a,
+.comment-text p a,
+.post-text-bottom span.cat-links a,
+.post-text-bottom .tags-links a,
+.post-text-bottom .tags-links span,
+.content-sidebar .tagcloud a,
+.wp-block-tag-cloud .tag-cloud-link,
+.content-sidebar a:hover,
+.wp-block-button.is-style-outline a.wp-block-button__link,
+.error-page__num,
+.woocommerce-mini-cart__buttons #respond input#submit,
+.woocommerce-mini-cart__buttons a.button,
+.woocommerce-mini-cart__buttons button.button,
+.woocommerce-mini-cart__buttons input.button,
+.woocommerce .star-rating,
+.woocommerce p.stars a,
+.art-info-bar .art-knowledge-list li i {
+    color: #ffc107;
+}
+
+.art-custom-list li:before,
+.art-timeline .art-timeline-item .art-timeline-mark,
+.art-form-field textarea.art-active,
+.art-form-field textarea:focus,
+.post-text-bottom .tags-links a,
+.post-text-bottom .tags-links span,
+.content-sidebar .tagcloud a,
+.wp-block-tag-cloud .tag-cloud-link,
+.wp-block-pullquote blockquote {
+    border-color: #ffc107;
+}
+
+.art-preloader-load path:last-child,
+.art-line-progress path:last-child,
+.art-cirkle-progress path:last-child {
+    stroke: #ffc107;
+}
+
+.recentcomments a {
+    display: inline !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.wpcf7 form .wpcf7-response-output,
+.wpcf7 form.invalid .wpcf7-response-output,
+.wpcf7 form.unaccepted .wpcf7-response-output,
+.wpcf7 form.sent .wpcf7-response-output {
+    border: none !important;
+    color: red;
+    display: block !important;
+}
+
+.wpcf7 form.sent .wpcf7-response-output {
+    color: green;
+}
+
+.art-contact-form input[type=text],
+.art-contact-form input[type=tel],
+.art-contact-form input[type=email],
+.art-contact-form input[type=number],
+.art-contact-form input[type=address],
+.art-contact-form input[type=password] {
+    padding-left: 65px;
+}
+
+.error-page__num {
+    position: relative;
+    z-index: 2;
+}

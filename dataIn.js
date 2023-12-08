@@ -1,11 +1,12 @@
 const swup = new Swup();
+
 var json = null;
 jQuery.ajax({
     'async': false,
     'global': false,
     'url': "data.json",
     'dataType': "json",
-    'success': function(data) {
+    'success': function (data) {
         json = data;
     }
 });
@@ -23,7 +24,31 @@ function detectHistroy() {
     location.reload();
 }
 
-jQuery(document).ready(function($) {
+
+
+//<------- load another page -------------->
+
+var url = new URL(document.URL);
+var loadurl = url.searchParams.get("web");
+console.log(loadurl);
+
+// Run once when page loads
+if (document.readyState === 'complete') {
+    if (loadurl != null) {
+        afterload();
+    }
+} else {
+    if (loadurl != null) {
+        document.addEventListener('DOMContentLoaded', () => afterload());
+    }
+}
+
+function afterload() {
+    swup.loadPage({ url: '/' + loadurl })
+}
+
+
+jQuery(document).ready(function ($) {
     // --------- Infor Bar ---------------
     let InforItem = json["info_bar"];
     $(".deicript").text(InforItem["deicript"]);
@@ -107,14 +132,16 @@ jQuery(document).ready(function($) {
                 </li>
                 `;
                 $(".art-current-page").html(`<a href=${element["link"]}">${element["name"]}</a>`);
-            } else {
+            }
+            else {
                 txt += `
                 <li id="menu-item-20${index}" class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-home">
                     <a href=${element["link"]}>${element["name"]}</a>
                 </li>
                 `;
             }
-        } else {
+        }
+        else {
             txt += `
             <li id="menu-item-20${index}" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children">
                 <a>${element["name"]}</a>
@@ -129,7 +156,8 @@ jQuery(document).ready(function($) {
                     </li>
                     `;
                     // $(".art-current-page").html(`<a href=${element["link"]}">${element["name"]}</a>`);
-                } else {
+                }
+                else {
                     txt += `
                     <li id="menu-item-2${index}${subindex}" class=" menu-item menu-item-type-post_type menu-item-object-page">
                         <a href=${subelement["link"]}>${subelement["name"]}</a>
@@ -145,7 +173,7 @@ jQuery(document).ready(function($) {
     // ----img dragble off 
     $("img").attr('draggable', 'false');
 
-    $('.menu-item-has-children a').on('click', function() {
+    $('.menu-item-has-children a').on('click', function () {
         $('.menu-item-has-children').toggleClass("opened");
         $('.sub-menu').toggleClass('art-active');
     });
@@ -164,7 +192,7 @@ function init() {
         elemsArry.forEach((element, index) => {
             element.classList.remove("current-menu-item");
         });
-        document.querySelector('.menu-item-has-children a').addEventListener('click', function() {
+        document.querySelector('.menu-item-has-children a').addEventListener('click', function () {
             document.querySelector('.menu-item-has-children').classList.toggle("opened");
             document.querySelector('.sub-menu').classList.toggle('art-active');
         });
@@ -280,7 +308,7 @@ function init() {
         for (let index = 0; index < home_data["tile_grid3"].length; index++) {
             const element = home_data["tile_grid3"][index];
             let html_code =
-                `<div class="swiper-slide">
+                `<div class="swiper-slide ">
                 <div class="art-a art-testimonial">
                     <div class="testimonial-body">
                         <img alt="Paul Trueman"
@@ -308,7 +336,8 @@ function init() {
             for (let li_index = 0; li_index < 5; li_index++) {
                 if (li_index < element["starts"]) {
                     html_code += `<li><i class="fas fa-star" style="color:#ffc107;"></i></li>`;
-                } else {
+                }
+                else {
                     html_code += `<li><i class="fas fa-star"></i></li>`;
                 }
             }
@@ -324,10 +353,10 @@ function init() {
         document.querySelector('.arrow-buttom').href = menuItem[1]['subName'][0]['link'];
         document.querySelector('.arrow-buttom .chevron-txt').innerHTML = menuItem[1]['subName'][0]['name'];
 
-        document.getElementById("home_tilegrid3").addEventListener('touchstart', function() { isOnDiv = true; });
-        document.getElementById("home_tilegrid3").addEventListener('mousedown', function() { isOnDiv = true; });
-        document.getElementById("home_tilegrid3").addEventListener('touchend', function() { isOnDiv = false; });
-        document.getElementById("home_tilegrid3").addEventListener('mouseup', function() { isOnDiv = false; });
+        document.getElementById("home_tilegrid3").addEventListener('touchstart', function () { isOnDiv = true; });
+        document.getElementById("home_tilegrid3").addEventListener('mousedown', function () { isOnDiv = true; });
+        document.getElementById("home_tilegrid3").addEventListener('touchend', function () { isOnDiv = false; });
+        document.getElementById("home_tilegrid3").addEventListener('mouseup', function () { isOnDiv = false; });
     }
 }
 
@@ -346,7 +375,7 @@ var xDown = null;
 var yDown = null;
 
 function getTouches(evt) {
-    return evt.touches || // browser API
+    return evt.touches ||             // browser API
         evt.originalEvent.touches; // jQuery
 }
 
@@ -384,7 +413,8 @@ function handleTouchMove(evt) {
         if (!isMouseOn) return;
         xUp = evt.clientX;
         yUp = evt.clientY;
-    } else {
+    }
+    else {
         xUp = evt.touches[0].clientX;
         yUp = evt.touches[0].clientY;
     }
@@ -392,7 +422,7 @@ function handleTouchMove(evt) {
     var xDiff = xDown - xUp;
     var yDiff = yDown - yUp;
 
-    if (Math.abs(xDiff) > Math.abs(yDiff)) { /*most significant*/
+    if (Math.abs(xDiff) > Math.abs(yDiff)) {/*most significant*/
         let element = document.querySelector('.art-content');
         if (xDiff > 0) {
             /* right swipe */
@@ -401,14 +431,16 @@ function handleTouchMove(evt) {
                     document.querySelector('.art-content').classList.remove('art-active');
                     document.querySelector('.art-info-bar').classList.remove('art-active');
                     document.querySelector('.art-menu-bar-btn').classList.remove('art-disabled');
-                } else {
+                }
+                else {
                     document.querySelector('.art-content').classList.add('art-active');
                     document.querySelector('.art-menu-bar').classList.add('art-active');
                     document.querySelector('.art-menu-bar-btn').classList.add('art-active');
                     document.querySelector('.art-info-bar-btn').classList.add('art-disabled');
                 }
             }
-        } else {
+        }
+        else {
             /* left swipe */
             if (!(document.querySelector('.art-info-bar').classList.contains('art-active'))) {
                 if (element.classList.contains('art-active')) {
@@ -442,3 +474,19 @@ function handleTouchMove(evt) {
     xDown = null;
     yDown = null;
 };
+
+
+// <----------------------------- E-mail sending funtion ------------------------------------------->
+function sendEmail() {
+    Email.send({
+        Host: "smtp.elasticemail.com",
+        Username: "maduranga.ayeshmantha@gmail.com",
+        Password: "6BC926483EEF49A4DCF82C230531A39B437A",
+        To: 'maduranga.ayeshmantha@gmail.com',
+        From: getElementById('your-email').value,
+        Subject: getElementById('your-name').value + ' @ayeshmantha.me',
+        Body: getElementById('your-message').value
+    }).then(
+        message => alert(message)
+    );
+}
