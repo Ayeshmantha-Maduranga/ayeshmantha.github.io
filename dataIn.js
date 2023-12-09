@@ -360,33 +360,75 @@ function init() {
     }
 
 
-    if (filename == '/contact.html') {
-        // let con_Email = getElementById('your-email').value
-        // getElementById('your-name').value
-        // getElementById('your-message').value
-    }
+    // if (filename == '/contact.html') {
+    //     con_Email = document.getElementById('your-email').value
+    //     document.getElementById('your-name').value
+    //     document.getElementById('your-message').value
+    // }
 
 
 }
-
+// var con_Email = ''
+// var con_name = ''
+// var con_msg = ''
 
 // <----------------------------- E-mail sending funtion ------------------------------------------->
 function sendEmail() {
     // <---- stop pgae loading
     event.preventDefault();
 
-    console.log('mail sending!');
-    Email.send({
-        Host: "smtp.elasticemail.com",
-        Username: "maduranga.ayeshmantha@gmail.com",
-        Password: "6BC926483EEF49A4DCF82C230531A39B437A",
-        To: 'maduranga.ayeshmantha@gmail.com',
-        From: "lakshanichathurangi100@gmail.com",
-        Subject: "test",
-        Body: "test body"
-    }).then(
-        message => alert(message)
-    );
+    let con_Email = document.getElementById('your-email').value
+    let con_name = document.getElementById('your-name').value
+    let con_msg = document.getElementById('your-message').value
+
+    // <---- remove prevense error msg
+    document.querySelectorAll(".wpcf7-not-valid-tip").forEach(el => el.remove());
+    // document.querySelector(".wpcf7-form-control-wrap").parentNode.removeChild()
+    // document.querySelector('.wpcf7-not-valid-tip').remove();
+
+    // console.log('mail sending!');
+    if (con_name === '') {
+        document.querySelector(".wpcf7-form-control-wrap[data-name='your-name']").innerHTML +=
+        `<span class="wpcf7-not-valid-tip" aria-hidden="true">The field is required.</span>`;
+    }
+    if (con_Email === '') {
+        document.querySelector(".wpcf7-form-control-wrap[data-name='your-email']").innerHTML +=
+        `<span class="wpcf7-not-valid-tip" aria-hidden="true">The field is required.</span>`;
+    }
+    if (con_msg === '') {
+        document.querySelector(".wpcf7-form-control-wrap[data-name='your-message']").innerHTML +=
+        `<span class="wpcf7-not-valid-tip" aria-hidden="true">The field is required.</span>`;
+    }
+
+
+    if (con_Email != '' && con_name != '' && con_msg != '') {
+
+        Email.send({
+            Host: "smtp.elasticemail.com",
+            Username: "maduranga.ayeshmantha@gmail.com",
+            Password: "6BC926483EEF49A4DCF82C230531A39B437A",
+            To: 'maduranga.ayeshmantha@gmail.com',
+            From: "info@ayeshmantha.me",
+            Subject: con_Email + " @[ayeshmantha.me]",
+            Body: `<p> Name : ${con_name} </br>
+                      Email : ${con_Email} </br>
+                        Msg : ${con_msg} </br>
+                </p>
+        `
+        }).then(
+            message => alert(message)
+        );
+
+        document.querySelector(".wpcf7-response-output").innerHTML = '';
+        con_Email = '';
+        con_name = '';
+        con_msg = '';
+    }
+    else {
+        document.querySelector(".wpcf7-response-output").innerHTML = 'One or more fields have an error. Please check and try again.';
+        console.log('empty inputs')
+        return false;
+    }
 }
 
 
