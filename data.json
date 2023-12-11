@@ -26,6 +26,11 @@
             "link": "/projects.html"
         },
         {
+            "name": "BLOG",
+            "link": "/blog.html"
+        }
+        ,
+        {
             "name": "CONTACT",
             "link": "/contact.html"
         }
