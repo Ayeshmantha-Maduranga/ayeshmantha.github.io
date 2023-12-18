@@ -366,6 +366,19 @@ function init() {
     //     document.getElementById('your-message').value
     // }
 
+    if (filename == '/projects.html') {
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("demo").innerHTML = this.responseText;
+            }
+        };
+        xhttp.open("GET", "https://rogue-sailfish-ae0.notion.site/ProjectPost-57dc8cc5dd504e0dbcebc2ee34291da0", true);
+        xhttp.send();
+
+    }
+
+
 
 }
 // var con_Email = ''
@@ -389,15 +402,15 @@ function sendEmail() {
     // console.log('mail sending!');
     if (con_name === '') {
         document.querySelector(".wpcf7-form-control-wrap[data-name='your-name']").innerHTML +=
-        `<span class="wpcf7-not-valid-tip" aria-hidden="true">The field is required.</span>`;
+            `<span class="wpcf7-not-valid-tip" aria-hidden="true">The field is required.</span>`;
     }
     if (con_Email === '') {
         document.querySelector(".wpcf7-form-control-wrap[data-name='your-email']").innerHTML +=
-        `<span class="wpcf7-not-valid-tip" aria-hidden="true">The field is required.</span>`;
+            `<span class="wpcf7-not-valid-tip" aria-hidden="true">The field is required.</span>`;
     }
     if (con_msg === '') {
         document.querySelector(".wpcf7-form-control-wrap[data-name='your-message']").innerHTML +=
-        `<span class="wpcf7-not-valid-tip" aria-hidden="true">The field is required.</span>`;
+            `<span class="wpcf7-not-valid-tip" aria-hidden="true">The field is required.</span>`;
     }
 
 
