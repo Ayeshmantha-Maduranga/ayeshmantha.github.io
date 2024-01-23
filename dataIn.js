@@ -1,3 +1,7 @@
+// <------------ maintenace Mode set -------------
+var maintenace = true;
+
+
 const swup = new Swup();
 
 var json = null;
@@ -27,7 +31,6 @@ function detectHistroy() {
 
 
 //<------- load another page -------------->
-
 var url = new URL(document.URL);
 var loadurl = url.searchParams.get("web");
 console.log(loadurl);
@@ -49,6 +52,19 @@ function afterload() {
 
 
 jQuery(document).ready(function ($) {
+    // ------------ set maintenace screen ----------------
+    if (maintenace) {
+        console.log('maintenace mode ON!');
+        document.querySelector('.art-mobile-top-bar').style.display = 'none';
+        document.querySelector('.art-app-wrapper').style.display = 'none';
+        document.querySelector('.maintenance-container').style.display = 'block';
+    }
+    else{
+        document.querySelector('.art-mobile-top-bar').style.display = 'block';
+        document.querySelector('.art-app-wrapper').style.display = 'block';
+        document.querySelector('.maintenance-container').style.display = 'none'; 
+    }
+
     // --------- Infor Bar ---------------
     let InforItem = json["info_bar"];
     $(".deicript").text(InforItem["deicript"]);
@@ -373,7 +389,7 @@ function init() {
                 document.getElementById("demo").innerHTML = this.responseText;
             }
         };
-        xhttp.open("GET", "https://rogue-sailfish-ae0.notion.site/ProjectPost-57dc8cc5dd504e0dbcebc2ee34291da0", true);
+        xhttp.open("GET", "https://projects.ayeshmantha.me/", true);
         xhttp.send();
 
     }
